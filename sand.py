@@ -9,7 +9,7 @@ class Grid:
         self.height = height
         self.Nx = Nx
         self.Ny = Ny
-        self.grid = np.zeros((self.Ny, self.Nx), dtype='float')
+        self.grid = np.zeros((self.Ny, self.Nx), dtype='int')
         self.window = pygame.display.set_mode((self.width, self.height))
         self.black = (0,0,0)
         self.white = (250,250,250)
@@ -36,7 +36,7 @@ class Grid:
 
     #RESETS GRID TO ORIGINAL STATE
     def reset(self):
-        self.grid = np.zeros((self.Ny, self.Nx), dtype='float')
+        self.grid = np.zeros((self.Ny, self.Nx), dtype='int')
     #IETRATES BACKWARDS AND UPDATES SAND CUBE POSITIONS
     def update(self):
         for i in range(self.Nx-2, -1, -1):
