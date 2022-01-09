@@ -11,6 +11,7 @@ class Grid:
         self.Ny = Ny
         self.grid = np.zeros((self.Ny, self.Nx), dtype='int')
         self.window = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption('Falling sand')
         self.black = (0,0,0)
         self.white = (250,250,250)
         self.orange = (255,165,0)
