@@ -1,4 +1,4 @@
-from sand import Grid
+from grid import Grid
 import pygame
 
 if __name__ == '__main__':
