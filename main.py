@@ -12,7 +12,7 @@ if __name__ == '__main__':
                 run = False
             if pygame.mouse.get_pressed()[0]:
                 try:
-                    grid.change_grid(event.pos)
+                    grid.add_sand(event.pos)
                 # handles clicking out of bounds
                 except AttributeError:
                     pass

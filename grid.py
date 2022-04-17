@@ -29,7 +29,7 @@ class Grid:
 
         pygame.display.update()
 
-    def change_grid(self, mouse_pos):
+    def add_sand(self, mouse_pos):
         x = int(mouse_pos[0] // self.dx)
         y = int(mouse_pos[1] // self.dy)
 
