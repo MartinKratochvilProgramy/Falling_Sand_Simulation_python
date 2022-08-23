@@ -38,6 +38,7 @@ class Grid:
     #RESETS GRID TO ORIGINAL STATE
     def reset(self):
         self.grid = np.zeros((self.Ny, self.Nx), dtype='int')
+
     #IETRATES BACKWARDS AND UPDATES SAND CUBE POSITIONS
     def update(self):
         for i in range(self.Nx-2, -1, -1):

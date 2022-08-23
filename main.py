@@ -2,7 +2,7 @@ from grid import Grid
 import pygame
 
 if __name__ == '__main__':
-    grid = Grid(400, 400, 60, 60)  # (WIDTH, HEIGHT, # of division x dir, # of division y dir)
+    grid = Grid(400, 400, 20, 20)  # (WIDTH, HEIGHT, # of division x dir, # of division y dir)
 
     run = True
     while run:
